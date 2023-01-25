@@ -19,7 +19,7 @@ const PaymentFail = () => {
         </Heading>
         <Link to={'/subscribe'}>
           <Button variant={'ghost'}>Try Again</Button>
-        </Link>
+        </Link> 
       </VStack>
     </Container>
   )
