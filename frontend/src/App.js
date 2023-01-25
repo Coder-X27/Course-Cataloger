@@ -10,6 +10,10 @@ import Courses from './Components/Courses/Courses';
 import Home from './Components/Home/Home';
 import Footer from './Components/Layout/Footer/Footer';
 import Header from './Components/Layout/Header/Header';
+import NotFound from './Components/NotFound/NotFound';
+import PaymentFail from './Components/Payments/PaymentFail';
+import PaymentSuccess from './Components/Payments/PaymentSuccess';
+import Subscribe from './Components/Payments/Subscribe';
 import Request from './Components/Request/Request';
 function App() {
   return (
@@ -23,7 +27,11 @@ function App() {
         <Route path='/about' element={<About/>} />
         <Route path='/login' element={<Login/>} />
         <Route path='/register' element={<Register/>} />
-        <Route path='/forget' element={<ForgetPassword/>} />
+        <Route path='/subscribe' element={<Subscribe/>} />
+        <Route path='/paymentsuccess' element={<PaymentSuccess/>} />
+        <Route path='/paymentfail' element={<PaymentFail/>} />
+        <Route path='/notfound' element={<NotFound/>} />
+        <Route path='/forgot' element={<ForgetPassword/>} />
         <Route path='/resetpassword/:token' element={<ResetPassword/>} />
       </Routes>
       <Footer/>
